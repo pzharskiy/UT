@@ -29,14 +29,14 @@ public class TestGetSquare {
     }
 
     @Test(dataProvider="positiveDataProvider")
-    public void TestDetectTriangle(int excepted, Triangle tr)
+    public void testPositiveDetectTriangle(int excepted, Triangle tr)
     {
 
         Assert.assertEquals(tr.detectTriangle(),excepted);
     }
 
-    @Test(dataProvider="negativeDataProvider", dependsOnMethods = "TestDetectTriangle" ,expectedExceptions = Exception.class)
-    public void TestNegativeDetectTriangle(Triangle tr)
+    @Test(dataProvider="negativeDataProvider", dependsOnMethods = "testPositiveDetectTriangle" ,expectedExceptions = Exception.class)
+    public void testNegativeDetectTriangle(Triangle tr)
     {
         tr.detectTriangle();
     }

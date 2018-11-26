@@ -23,7 +23,7 @@ public class TestCheckTriangle {
     }
 
     @Test(dataProvider="positiveDataProvider" )
-    public void TestCheckTriangle(String excepted, Triangle tr)
+    public void testCheckTriangle(String excepted, Triangle tr)
     {
         tr.checkTriangle();
         Assert.assertEquals(tr.getMessage(),excepted);
