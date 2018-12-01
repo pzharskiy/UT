@@ -23,7 +23,7 @@ public class TestGetSquare {
                 {new Triangle(1.0, 0.0, 0.0)},
                 {new Triangle(1.0, 2.0, 0.0)},
                 {new Triangle(2.0, 2.0, 0.0)},
-                {new Triangle(6.0, 2.0, -4.0)},
+                {new Triangle(-6.0, -2.0, -4.0)},
                 {new Triangle(Double.MAX_VALUE, Double.MAX_VALUE, 5)},
         };
     }

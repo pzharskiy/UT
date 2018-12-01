@@ -13,8 +13,6 @@ public class TestDetectTriangle {
                 {4,new Triangle(6.0, 3.0, 4.0)},
                 //Равносторонний
                 {3,new Triangle(4.0, 4.0, 4.0)},
-                //Равнобедренный - минимальный треугольник
-                {3,new Triangle(1.0, 1.0, 1.0)},
                 //Равнобедренный
                 {2,new Triangle(3.0, 4.0, 4.0)},
                 {2,new Triangle(4.0, 3.0, 4.0)},
@@ -48,7 +46,7 @@ public class TestDetectTriangle {
                 {new Triangle(0.0, 0.0, 0.0)},
                 {new Triangle(1.0, 0.0, 0.0)},
                 {new Triangle(1.0, 2.0, 0.0)},
-                {new Triangle(2.0, 2.0, 0.0)},
+                {new Triangle(2.0, 0.0, 2.0)},
                 //Отрицательная длина стороны (возможно - избыточное, т.к. не будут проходить по сумме 2 сторон)
                 {new Triangle(6.0, 2.0, -4.0)},
         };
