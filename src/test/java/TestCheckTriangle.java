@@ -11,11 +11,17 @@ public class TestCheckTriangle {
         return new Object[][]{
 
                 {"c<=0", new Triangle(1.0, 2.0, 0.0)},
+                {"c<=0", new Triangle(1.0, 2.0, -2.0)},
                 {"a<=0", new Triangle(0.0, 2.0, 3.0)},
+                {"a<=0", new Triangle(-5.0, 2.0, 3.0)},
                 {"b<=0", new Triangle(1.0, 0.0, 4.0)},
+                {"b<=0", new Triangle(1.0, -6.0, 4.0)},
                 {"a+b<=c",new Triangle(15.0, 12.0, 30.0)},
+                {"a+b<=c",new Triangle(15.0, 15.0, 30.0)},
                 {"a+c<=b",new Triangle(12.0, 30.0, 10.0)},
+                {"a+c<=b",new Triangle(15.0, 25.0, 10.0)},
                 {"b+c<=a",new Triangle(30.0, 12.0, 15.0)},
+                {"b+c<=a",new Triangle(20.0, 10.0, 10.0)},
                 {"",new Triangle(4.0, 6.0, 8.0)},
                 {"",new Triangle(8.0, 6.0, 4.0)},
                 {"",new Triangle(8.0, 4.0, 6.0)},
